@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:black">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Smart Phone Price Range Prediction</h2>
+            <h3>RAM(in MB)</h3>
+            <input id="first" name="ram" type="number " required="required">
+            <h3>Battery power(in mAH)</h3><br><input id="second" name="battery_power" required="required" type="number ">
+            
+         
+            
+            <h3>Internal Memeory (in GB)</h3><input id="sixth" name="int_memory" required="required"  type="number ", required="required" >
+            <h3>Cores in processor</h3><input id="fifth" name="n_cores" required="required"  type="number " , required="required">
+            
+            <br><br><button id="sub" type="submit ">Predict the price range</button><br>
+
+
+
+
+        </form>
+    </div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+            <a target="_blank" href="https://github.com/anujvyas/Diabetes-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/anujkvyas"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with by Abhisek Datta.</p>
+       </div>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
